@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 50%;
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+form button {
+  border-radius: 30px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  height: 40px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+form input {
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  height: 40px;
+  background-color: #f9f9f9;
+  color: #333333;
+  font-size: 16px;
+  padding-left: 10px;
+  outline: none;
+}
+
+.card {
+  display: flex;
+  align-items: center; /* Alinha checkbox e conteúdo verticalmente */
+  justify-content: space-between; /* Garante que haja espaço entre o conteúdo e o botão */
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+.card.completed {
+  background-color: #e0ffe0; /* Altera o fundo para um verde claro */
+  opacity: 0.8; /* Adiciona transparência para indicar conclusão */
+}
+
+.card p {
+  color: #333333;
+  font-weight: normal;
+  margin: 0; /* Remove as margens padrão */
+}
+
+.card span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px; /* Adiciona margem para afastar o botão do conteúdo */
+}
+
+.card button:hover {
+  opacity: 0.5;
+}
+
+.complete-checkbox {
+  margin-right: 10px; /* Espaço entre o checkbox e o conteúdo */
+}
+
+.card > div {
+  flex-grow: 1; /* Garante que o conteúdo ocupe o espaço disponível */
+  padding-right: 10px; /* Espaço entre o conteúdo do texto e o botão */
+}
