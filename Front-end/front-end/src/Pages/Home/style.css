@@ -54,8 +54,8 @@ form input {
 
 .card {
   display: flex;
-  align-items: center; /* Alinha checkbox e conteúdo verticalmente */
-  justify-content: space-between; /* Garante que haja espaço entre o conteúdo e o botão */
+  align-items: center;
+  justify-content: space-between;
   background-color: #ffffff;
   margin: 10px;
   padding: 10px;
@@ -64,14 +64,14 @@ form input {
 }
 
 .card.completed {
-  background-color: #e0ffe0; /* Altera o fundo para um verde claro */
-  opacity: 0.8; /* Adiciona transparência para indicar conclusão */
+  background-color: #e0ffe0;
+  opacity: 0.8;
 }
 
 .card p {
   color: #333333;
   font-weight: normal;
-  margin: 0; /* Remove as margens padrão */
+  margin: 0;
 }
 
 .card span {
@@ -83,7 +83,7 @@ form input {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-left: 10px; /* Adiciona margem para afastar o botão do conteúdo */
+  margin-left: 10px;
 }
 
 .card button:hover {
@@ -91,10 +91,10 @@ form input {
 }
 
 .complete-checkbox {
-  margin-right: 10px; /* Espaço entre o checkbox e o conteúdo */
+  margin-right: 10px;
 }
 
 .card > div {
-  flex-grow: 1; /* Garante que o conteúdo ocupe o espaço disponível */
-  padding-right: 10px; /* Espaço entre o conteúdo do texto e o botão */
+  flex-grow: 1;
+  padding-right: 10px;
 }

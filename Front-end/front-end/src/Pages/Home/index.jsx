@@ -35,7 +35,7 @@ function Home() {
     getTasks()
   }, [])
 
-  async function toggleTaskCompletion(event, task) {
+  async function taskCompletion(event, task) {
     const cardElement = event.target.closest('.card');
 
     const newStatus = event.target.checked;
@@ -68,7 +68,7 @@ function Home() {
           <input
             type="checkbox"
             className="complete-checkbox"
-            onChange={(event) => toggleTaskCompletion(event, task)}
+            onChange={(event) => taskCompletion(event, task)}
             checked={task.status}
           />
           <div>
