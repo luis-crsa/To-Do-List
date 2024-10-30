@@ -15,7 +15,6 @@ function Home() {
   }
 
   async function createTasks() {
-
     await api.post('/tasks', {
       tittle: inputTitlle.current.value,
       description: inputDescription.current.value,
@@ -30,29 +29,29 @@ function Home() {
     await api.delete(`/tasks/${id}`)
     getTasks()
   }
-
-  useEffect(() => {
-    getTasks()
-  }, [])
-
+  
   async function taskCompletion(event, task) {
     const cardElement = event.target.closest('.card');
-
+    
     const newStatus = event.target.checked;
-
+    
     if (newStatus) {
       cardElement.classList.add('completed');
     } else {
       cardElement.classList.remove('completed');
     }
-
+    
     await api.put(`/tasks/${task.id}`, {
       status: newStatus,
     });
-
+    
     getTasks();
   }
-
+  
+    useEffect(() => {
+      getTasks()
+    }, [])
+  
   return (
     <div className='container'>
       <form>
