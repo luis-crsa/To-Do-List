@@ -1,12 +1,12 @@
 # 📝To Do List
 
-Este projeto é uma To Do List que permite os usuários gerenciar suas tarefas. Com ele, é possível adicionar, visualizar, editar e excluir tarefas de forma simples e eficiente. O sistema é composto por uma API, conectada a um banco de dados, que gerencia todas as operações no backend, enquanto o frontend proporciona uma experiência de usuário agradável e fácil de usar.
+Este projeto é uma To Do List que permite os usuários gerenciar suas tarefas. Com ele, é possível visualizar, adicionar e excluir tarefas de forma simples e eficiente. O sistema é composto por uma API, conectada a um banco de dados, que gerencia todas as operações no backend, enquanto o frontend proporciona uma experiência de usuário agradável e fácil de usar.
 
 ## 🛠️Tecnologias Utilizadas
 
 + Backend: Node.js, Express
 + Banco de Dados: MongoDB
-+ ORM: Prisma
++ ODM: Prisma
 + Frontend: React, Vite
 + Comunicação: Axios
 
